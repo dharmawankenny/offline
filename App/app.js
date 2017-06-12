@@ -14,15 +14,6 @@ import { getTodos } from './actions';
 
 import './style';
 
-// NetworkError.prototype = Error.prototype;
-// NetworkError.prototype.status = null;
-
-// const request = axios.create({
-//   baseURL: 'http://localhost:8000/',
-//   timeout: 1000,
-//   headers: { 'content-type': 'application/json' },
-// });
-
 const customConfig = Object.assign({}, offlineConfig, {
   effect: (effect, action) => {
     return axios({

@@ -19,15 +19,6 @@ import {
 // const API_BASE = 'http://localhost:8000';
 const API_BASE = 'http://daenerys-server.herokuapp.com';
 
-// export function getTodos() {
-//   return (dispatch) => {
-//     return fetchTodo().then(
-//       res => dispatch(getTodoSuccess(res.data)),
-//       err => dispatch(getTodoFailed(err)),
-//     );
-//   };
-// }
-
 export function getTodos() {
   return {
     type: FETCH_TODO,
@@ -40,15 +31,6 @@ export function getTodos() {
     }
   };
 }
-
-// export function addTodo(todo) {
-//   return (dispatch) => {
-//     return postTodo(todo).then(
-//       res => dispatch(addTodoSuccess(res.data)),
-//       err => dispatch(addTodoFailed(err)),
-//     );
-//   };
-// }
 
 export function addTodo(todo, index) {
   const localId = MD5({ todo, index }).toString();
@@ -66,15 +48,6 @@ export function addTodo(todo, index) {
   };
 }
 
-// export function editTodo(id, newTodo, index) {
-//   return (dispatch) => {
-//     return putTodo(id, newTodo).then(
-//       res => dispatch(editTodoSuccess(res.data, index)),
-//       err => dispatch(editTodoFailed(err)),
-//     );
-//   };
-// }
-
 export function editTodo(id, oldTodo, newTodo, index) {
   console.log(id, oldTodo, newTodo, index);
   return {
@@ -90,15 +63,6 @@ export function editTodo(id, oldTodo, newTodo, index) {
   };
 }
 
-// export function finishTodo(id, index) {
-//   return (dispatch) => {
-//     return deleteTodo(id).then(
-//       res => dispatch(deleteTodoSuccess(index)),
-//       err => dispatch(deleteTodoFailed(err)),
-//     );
-//   };
-// }
-
 export function finishTodo(todo, index) {
   return {
     type: DELETE_TODO,
@@ -112,78 +76,3 @@ export function finishTodo(todo, index) {
     }
   };
 }
-
-// function fetchTodo() {
-//   return axios.get('${API_BASE}/tasks/');
-// }
-
-// function postTodo(todo) {
-//   return axios.post('${API_BASE}/tasks/', {
-//     name: todo,
-//   });
-// }
-
-// function putTodo(id, todo) {
-//   return axios.put(`${API_BASE}/tasks/${id}`, todo);
-// }
-
-// function deleteTodo(id) {
-//   return axios.delete(`${API_BASE}/tasks/${id}`);
-// }
-
-// function getTodoSuccess(todos) {
-//   return {
-//     type: FETCH_TODO_SUCCESS,
-//     todos,
-//   }
-// }
-
-// function getTodoFailed(err) {
-//   return {
-//     type: FETCH_TODO_FAILED,
-//     err,
-//   }
-// }
-
-// function addTodoSuccess(todo) {
-//   return {
-//     type: ADD_TODO_SUCCESS,
-//     todo,
-//   };
-// }
-
-// function addTodoFailed(err) {
-//   return {
-//     type: ADD_TODO_FAILED,
-//     err,
-//   };
-// }
-
-// function editTodoSuccess(todo, index) {
-//   return {
-//     type: EDIT_TODO_SUCCESS,
-//     todo,
-//     index,
-//   };
-// }
-
-// function editTodoFailed(err) {
-//   return {
-//     type: EDIT_TODO_FAILED,
-//     err,
-//   };
-// }
-
-// function deleteTodoSuccess(index) {
-//   return {
-//     type: DELETE_TODO_SUCCESS,
-//     index,
-//   };
-// }
-
-// function deleteTodoFailed(err) {
-//   return {
-//     type: DELETE_TODO_FAILED,
-//     err,
-//   };
-// }

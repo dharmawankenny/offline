@@ -1,5 +1,7 @@
 import { createSelector } from 'reselect';
-import { toJS } from 'immutable'
+import { toJS } from 'immutable';
+
+// @TODO remove this, totally unnecessary
 
 export const stateSelector = state => state;
 

@@ -6,7 +6,8 @@ const html = new HtmlWebpackPlugin({template: './App/index.html'});
 const offline = new OfflinePlugin({
   ServiceWorker: {
     events: true
-  }
+  },
+  AppCache: false,
 });
 
 module.exports = {

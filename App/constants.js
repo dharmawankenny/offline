@@ -1,0 +1,12 @@
+export const ADD_TODO = "offlineTodo/ADD_TODO";
+export const ADD_TODO_SUCCESS = "offlineTodo/ADD_TODO_SUCCESS";
+export const ADD_TODO_FAILED = "offlineTodo/ADD_TODO_FAILED";
+export const EDIT_TODO = "offlineTodo/EDIT_TODO";
+export const EDIT_TODO_SUCCESS = "offlineTodo/EDIT_TODO_SUCCESS";
+export const EDIT_TODO_FAILED = "offlineTodo/EDIT_TODO_FAILED";
+export const DELETE_TODO = "offlineTodo/DELETE_TODO";
+export const DELETE_TODO_SUCCESS = "offlineTodo/DELETE_TODO_SUCCESS";
+export const DELETE_TODO_FAILED = "offlineTodo/DELETE_TODO_FAILED";
+export const FETCH_TODO = "offlineTodo/FETCH_TODO";
+export const FETCH_TODO_SUCCESS = "offlineTodo/FETCH_TODO_SUCCESS";
+export const FETCH_TODO_FAILED = "offlineTodo/FETCH_TODO_FAILED";

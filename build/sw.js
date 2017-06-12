@@ -1,7 +1,7 @@
 var __wpo = {
   "assets": {
     "main": [
-      "./main.21f2eb680945b5e2a8e4.js",
+      "./main.3fc09e958b41420bdb10.js",
       "./"
     ],
     "additional": [],
@@ -9,12 +9,12 @@ var __wpo = {
   },
   "externals": [],
   "hashesMap": {
-    "eca3c3fb014e686e6228b06025b74745cadf4c9a": "./main.21f2eb680945b5e2a8e4.js",
-    "490f53bcb1d2cf297208e1083a1afa857c438d0d": "./"
+    "b804799ed321ba626c45ef55f97d14ce123d6281": "./main.3fc09e958b41420bdb10.js",
+    "aacf204a0d66927e62d6aeba836c87ab00b19486": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "6/6/2017, 2:03:22 PM",
+  "version": "6/12/2017, 6:44:56 PM",
   "name": "webpack-offline",
   "pluginVersion": "4.8.1",
   "relativePaths": true

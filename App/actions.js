@@ -16,8 +16,8 @@ import {
   DELETE_TODO_FAILED,
 } from './constants';
 
-const API_BASE = 'http://localhost:8000';
-// const API_BASE = 'http://daenerys-server.herokuapp.com';
+// const API_BASE = 'http://localhost:8000';
+const API_BASE = 'http://daenerys-server.herokuapp.com';
 
 // export function getTodos() {
 //   return (dispatch) => {
